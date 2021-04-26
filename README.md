@@ -4,8 +4,8 @@ RT-System serial cable replacments
 
 ## Background
 
-I recently became the proud owner of a used ICOM ID-5100. The rig came with an original CD of the rt SYSTEMS WCS-D5100-Data cloning software, a USB-29A programming lead and a generic programming lead for use with ICOMs software. The software also came with a few random cables plus licenses for a few transceivers including a YAESU FT817 (no cable, but more on that later).
-<br>
+I recently became the proud owner of a used ICOM ID-5100. The rig came with an original CD of the rt SYSTEMS WCS-D5100-Data cloning software, a USB-29A programming lead and a generic programming lead for use with ICOMs software. The software also came with a few random cables plus licenses for a few transceivers including a YAESU FT817 (no cable, but more on that later).<br><br>
+
 The problem was no matter what I could not get the rt SYSTEMS software to communicate with the ID-5100 using the USB-29A programming lead and much to my annoyance rt SYSTEMS in their great wisdom do not work with  cables from anyone else.
 <br>
 Keen to try the rt SYSTEMS software I opened the USB-29A cable to find the ubiquitous FTDI 232RL chip plus a few surface mount transistors to perform the RS232 level matching. A little bit of testing and it appeared one or more of the surface mount transistors must have failed.
