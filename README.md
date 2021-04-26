@@ -6,33 +6,30 @@ RT-System serial cable replacments
 
 I recently became the proud owner of a used ICOM ID-5100. The rig came with an original CD of the rt SYSTEMS WCS-D5100-Data cloning software, a USB-29A programming lead and a generic programming lead for use with ICOMs software. The software also came with a few random cables plus licenses for a few transceivers including a YAESU FT817 (no cable, but more on that later).<br><br>
 
-The problem was no matter what I could not get the rt SYSTEMS software to communicate with the ID-5100 using the USB-29A programming lead and much to my annoyance rt SYSTEMS in their great wisdom do not work with  cables from anyone else.
-<br>
-Keen to try the rt SYSTEMS software I opened the USB-29A cable to find the ubiquitous FTDI 232RL chip plus a few surface mount transistors to perform the RS232 level matching. A little bit of testing and it appeared one or more of the surface mount transistors must have failed.
-<br>
-At this point I could have tried to repair the USB-29A but instead I decided it would be quicker and easier to reprogram the generic lead I already had which by chance was also based on the FTDI 232RL.
-<br><br>
+The problem was no matter what I could not get the rt SYSTEMS software to communicate with the ID-5100 using the USB-29A programming lead and much to my annoyance rt SYSTEMS in their great wisdom do not work with  cables from anyone else.<br><br>
+
+Keen to try the rt SYSTEMS software I opened the USB-29A cable to find the ubiquitous FTDI 232RL chip plus a few surface mount transistors to perform the RS232 level matching. A little bit of testing and it appeared one or more of the surface mount transistors must have failed.<br><br>
+
+At this point I could have tried to repair the USB-29A but instead I decided it would be quicker and easier to reprogram the generic lead I already had which by chance was also based on the FTDI 232RL.<br><br>
+
 ## Making the USB-29A replacement
 
-First download the FT_Prog application from the https://ftdichip.com/utilities/ website.
-<br>
+First download the FT_Prog application from the https://ftdichip.com/utilities/ website.<br>
+
 This application is used by system designers to configure FTDI 232RL chips.
-Using the FT_Prog program I scanned the USB-29A to get the critical USB string descriptors and the USB vendor ID (VID) and product ID (PID).
-<br>
+Using the FT_Prog program I scanned the USB-29A to get the critical USB string descriptors and the USB vendor ID (VID) and product ID (PID).<br>
+
 - Manufacture = RT Systems
 - Product Description = CT29A Radio Cable
 - Serial Number = RTxxxxxx
 - VID = 0x2100
-- PID = 0x9E53
-<br>
+- PID = 0x9E53<br>
 
-Note: The same information is available from the Linux FTDI serial databases if you google it.
-<br>
-The most critical part of the process is finding a FTDI USB to serial board with chip that can re-programmed. This is because a few years ago FTDI introduced code into the Windows FTDI driver to change the PID of fake FTDI devices to 0x0000 effectively making them useless. It seems to avoid this current fake FTDI devices simply ignore any requests to change their settings.
-<br>
+Note: The same information is available from the Linux FTDI serial databases if you google it.<br>
 
-How do you know if you got a fake? Good question. Try reading one of the many articles on the internet 😊
-<br>
+The most critical part of the process is finding a FTDI USB to serial board with chip that can re-programmed. This is because a few years ago FTDI introduced code into the Windows FTDI driver to change the PID of fake FTDI devices to 0x0000 effectively making them useless. It seems to avoid this current fake FTDI devices simply ignore any requests to change their settings.<br>
+
+How do you know if you got a fake? Good question. Try reading one of the many articles on the internet 😊<br>
 
 I was lucky the generic CI-V programming cable provided had a “real” FTDI chip along with a MAX232 level shifter. Another physically identical cable I had, marked LD-C101, was not based on an FTDI chip.
 
