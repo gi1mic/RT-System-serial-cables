@@ -4,11 +4,11 @@ RT-System serial cable replacments
 
 ## Background
 
-I recently became the proud owner of a used ICOM ID-5100. The rig came with an original CD of the rt SYSTEMS WCS-D5100-Data cloning software, a USB-29A programming lead and a generic programming lead for use with ICOMs software. The software also came with a few random cables plus licenses for a few transceivers including a YAESU FT817 (no cable, but more on that later).<br>
+I recently became the proud owner of a used ICOM ID-5100. The rig came with an original CD of the rt SYSTEMS WCS-D5100-Data cloning software, a USB-29A programming lead and a generic programming lead for use with ICOMs software. The software also came with a few random cables plus licenses for a number of transceivers including a YAESU FT817 (no cable, but more on that later).<br>
 
-The problem was no matter what I could not get the rt SYSTEMS software to communicate with the ID-5100 using the USB-29A programming lead and much to my annoyance rt SYSTEMS in their great wisdom do not work with  cables from anyone else.<br>
+The problem was no matter what I tried I could not get the rt SYSTEMS software to communicate with the ID-5100 using the USB-29A programming lead and much to my annoyance rt SYSTEMS do not work with  cables from anyone else.<br>
 
-Keen to try the rt SYSTEMS software I opened the USB-29A cable to find the ubiquitous FTDI 232RL chip plus a few surface mount transistors to perform the RS232 level matching. A little bit of testing and it appeared one or more of the surface mount transistors must have failed.<br>
+Based on reviews I was keen to try the rt SYSTEMS software. So I opened the USB-29A cable to find the ubiquitous FTDI 232RL chip plus a few surface mount transistors to perform the RS232 level matching. A little bit of testing and it appeared one or more of the surface mount transistors must have failed.<br>
 
 At this point I could have tried to repair the USB-29A but instead I decided it would be quicker and easier to reprogram the generic lead I already had which by chance was also based on the FTDI 232RL.<br>
 
@@ -31,7 +31,7 @@ The most critical part of the process is finding a FTDI USB to serial board with
 
 How do you know if you got a fake? Good question. Try reading one of the many articles on the internet 😊<br>
 
-I was lucky the generic CI-V programming cable provided had a “real” FTDI chip along with a MAX232 level shifter. Another physically identical cable I had, marked LD-C101, was not based on an FTDI chip.
+I was lucky the generic CI-V programming cable provided had a “real” FTDI chip along with a MAX232 level shifter. Another ICOM CI-V cable I had, marked LD-C101, was not based on an FTDI chip.
 
 <center><img src="https://github.com/gi1mic/RT-System-serial-cables/blob/main/images/ci-v%20cable.jpg?raw=true" width=50%></center><br><br>
 
@@ -79,6 +79,10 @@ Since I was re-using an existing CI-V cable for the ID-5100 there was no wiring 
 You will need to install the USB-29A drivers for the newly programmed cable to be identified by windows as a serial device. The cable then plugs into the data port on the ID-5100 and can be used by either the rt Systems software or the ICOM software.<br>
 
 <center><img src="https://github.com/gi1mic/RT-System-serial-cables/blob/main/images/ICOM%20ID-5100.jpg?raw=true" width=50%></center><br>
+
+
+## Was it worth it?
+Personally, I think I will stick with the ICOM software or CHIRP. It turns out the advantages rt market are not really of that much use to me. The FT-817 software may be of more use<br>
 
 ## YAESU FT817 CAT 62B Radio Cable
 
