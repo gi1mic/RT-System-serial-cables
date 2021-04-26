@@ -46,6 +46,7 @@ Now press CTRL+S to save the newly read device as a template. This will help rec
 Now change the Vendor ID and the Product ID to
 
 VID = 2100
+
 PID = 9E53
 
 <center><img src="https://github.com/gi1mic/RT-System-serial-cables/blob/main/images/vid-pid.jpg?raw=true" width=50%></center><br>
