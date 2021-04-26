@@ -51,8 +51,11 @@ PID = 9E53
 <center><img src="https://github.com/gi1mic/RT-System-serial-cables/blob/main/images/vid-pid.jpg?raw=true" width=50%></center><br>
 
 Then update the string descriptors to:
+
 Manufacture = RT Systems
+
 Product Description = CT29A Radio Cable
+
 Serial Number = RTxxxxxx<br>
 
 <center><img src="https://github.com/gi1mic/RT-System-serial-cables/blob/main/images/string%20desc.jpg?raw=true" width=50%></center><br>
